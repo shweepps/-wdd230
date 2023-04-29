@@ -14,14 +14,14 @@ body{
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1em;
     color: #3d0b0b;
     box-shadow: 10px 5px  #888888; 
   }
 
 h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 3em;
+    font-size: 1.5em;
     color: white;
   }
 
@@ -42,8 +42,9 @@ h1,h2{
    
  }
  
-img{
-   
+header img{
+   width: 150px;
+   height: auto;
    padding: 10px  ;
    border-radius: 80px;
  }
