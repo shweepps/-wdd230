@@ -1,23 +1,39 @@
-@media only screen and (min-width: 48em) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 32.5em) {
+  
+main{
+      grid-template-columns: 1fr 1fr;
+      font-size: 1rem;
+      
+  
+    }
+section {
+        
+        border-radius: 1pc;
+        
+      }
+h2{
+        font-size: 2.1em;
+      }
+      
+  
+section:nth-child(3){
+      grid-column: span 2;
+    }
     
+ header,
+nav,main,
+footer {
+      margin: 2rem auto;
+      max-width: 760px;
+    }
+.para{
+        font-size :1.7em ;
     }
   
-    section:nth-child(1) {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    section:nth-child(23) {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        
-    }
-
-    section:nth-child(3) {
-        grid-column: span 2;
-       
-    }
+  
+h1 {
+    font-size: 1.5em;
+}
+  
   }
+  
