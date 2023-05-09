@@ -1,0 +1,29 @@
+@media only screen and (min-width: 32.5em) {
+
+     
+h2 {
+ 
+    font-size: 1.5em;
+ 
+  }
+
+h1 {
+    
+    font-size: 2em;
+    
+}
+nav{
+  
+  flex-direction: row;
+  text-align: center;
+  
+}
+ 
+header img{
+    width: 200px;
+
+  }
+
+
+
+}
