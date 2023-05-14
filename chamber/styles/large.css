@@ -12,7 +12,23 @@
         grid-gap: .4rem;
 
     }
+    
+   nav ul#primaryNav{
+    display: flex;
+    margin-left: 2vw;
+    
+    justify-content: center;
+   }
+    nav button{
+        display: none;
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid black;
+    }
 
+   
+    
     .sport:nth-child(3){
         display: block;
     }
