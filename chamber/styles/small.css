@@ -38,12 +38,15 @@ nav ul li a{
     border-top: 1px solid rgba(0,0,0,0.5);
 }
 nav ul{
-    display: none;
+    
     list-style-type: none;
     color: black;
     padding: 0;
     
 
+}
+nav ul{
+    display: none;
 }
 nav ul.open{
     display: block;
@@ -85,21 +88,21 @@ aside{
 
 }
 
-#hamBtn span:nth-child(1){
-    display: block;
-}
-#hamBtn span:nth-child(2){
+
+.open span:nth-child(1){
     display: none;
 }
 
-#hamBtn .open span:nth-child(1){
-    display: none;
-    
-}
-#hamBtn .open span:nth-child(2){
+.open span:nth-child(2){
     display: block;
 }
 
+span:nth-child(1){
+    display: block;
+}
+ span:nth-child(2){
+    display: none;
+}
 
 footer{
     display: flex;
