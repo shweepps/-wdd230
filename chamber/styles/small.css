@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+     border: 1px solid black;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+}
+
+main{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+}
+
+.sections{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    margin: 10px;
+    
+}
+aside{
+    flex-direction: column;
+}
+
+.sport{
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.sport:nth-child(3),section:nth-child(5){
+    display: none;
+}
+
+nav ul, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+
+}
+footer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+     border: 1px solid black;
+}

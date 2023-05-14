@@ -1,0 +1,55 @@
+@media only screen and (min-width: 610px) {
+   
+    main{
+        display: grid;
+        height: 700px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "event hero hero sidebar"
+        "weather hero hero sidebar"
+        "join news news sidebar";
+        grid-gap: .4rem;
+
+    }
+
+    .sport:nth-child(3){
+        display: block;
+    }
+    aside{
+        
+        flex-direction: column;
+    }
+
+    #hero{
+        grid-area: hero;
+        
+    }
+    #event{
+        grid-area: event;
+        
+    }
+    #sidebar{
+        grid-area: sidebar;
+    }
+    #news{
+        grid-area: news;
+
+    }
+    #weather{
+        grid-area: weather;
+    }
+    #join{
+        grid-area: join;
+    }
+
+    section:nth-child(5), .sections:nth-child(4),
+    .sections:nth-child(2){
+        width: 85%;
+    }
+
+
+    
+    
+
+}
