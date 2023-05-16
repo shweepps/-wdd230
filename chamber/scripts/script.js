@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const footeEl = document.querySelector('footer');
 
 
-    footeEl.innerHTML = msgFooter +siteName + logo + msgSecond + map;
+    footeEl.innerHTML = msgFooter + siteName + logo + msgSecond + map;
 
     function toggleMenu(){
         

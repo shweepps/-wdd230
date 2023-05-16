@@ -20,6 +20,11 @@ nav button{
     color:#555;
     
 }
+.linkedin, .github{
+    
+    float: right;
+    width: 40px;
+  }
 
 
 nav ul li.active a {
