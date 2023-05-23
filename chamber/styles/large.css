@@ -41,6 +41,16 @@
         grid-area: hero;
         
     }
+    #hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #weather img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     #event{
         grid-area: event;
         

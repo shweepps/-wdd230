@@ -1,3 +1,19 @@
+html, body {
+    height: 100%;
+  }
+
+  body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex-grow: 1;
+  }
+  footer {
+    flex-shrink: 0;
+  }
+  
 header{
     display: flex;
     justify-items: center;
@@ -76,6 +92,7 @@ main{
     border: 1px solid black;
     background-color: aquamarine;
     margin: 10px;
+    word-wrap: break-word;
     
 }
 aside{
@@ -108,11 +125,32 @@ span:nth-child(1){
  span:nth-child(2){
     display: none;
 }
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #weather img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+.banner {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
 
 footer{
     display: flex;
-
-    justify-items: center;
+    justify-items: baseline;
     align-items: center;
     text-align: center;
     flex-direction: column;

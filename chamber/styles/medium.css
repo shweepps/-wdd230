@@ -7,7 +7,7 @@
 
     main{
         grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
        
     } 
     .sections{
@@ -17,6 +17,18 @@
         
     }
 
+    
+
+    #hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #weather img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     aside{
         display: flex;
         flex-direction: row;
@@ -45,6 +57,13 @@
     
     .sport{
         height: 100%;
+    }
+    section:nth-child(7){
+        position: fixed;
+        display: block;
+        order: 7;
+        
+        
     }
 
 
