@@ -13,17 +13,18 @@ document.addEventListener('DOMContentLoaded', function(){
         { dateStyle: "full" }).format(
             now
         );
+ 
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const currentDate = new Date();
     const currentDay = days[currentDate.getDay()];
+    const banner = document.getElementById("banner");
     
     if (currentDay === "Monday" || currentDay === "Tuesday") {
-        const banner = document.createElement("div");
-        banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-        banner.classList.add("banner");
-        document.body.insertBefore(banner, document.body.firstChild);
+        banner.style.display = "block";
+    } else {
+        banner.style.display = "none";
     }
-        
+
 
     datefield.textContent = fulldate;
     const footeEl = document.querySelector('footer');
