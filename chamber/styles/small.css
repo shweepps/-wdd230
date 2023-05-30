@@ -157,3 +157,9 @@ footer{
     border: 1px solid black;
     background-color: aqua;
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

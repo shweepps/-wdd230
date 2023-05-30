@@ -75,7 +75,11 @@
         width: 85%;
     }
 
-
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
     
     
 
