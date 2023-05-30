@@ -75,10 +75,15 @@
         width: 85%;
     }
 
-    .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
+    #weather-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px; /* Adjust the height as needed */
+      }
+      
+      #weather-info p {
+        margin: 5px; /* Adjust the margin as needed */
       }
     
     

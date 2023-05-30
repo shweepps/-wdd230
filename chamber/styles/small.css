@@ -153,10 +153,24 @@ footer{
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    z-index: 1;
     border: 1px solid black;
     background-color: aqua;
 }
+
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  #weather-info p {
+    margin: 5px; /* Adjust the margin as needed */
+  }
 
 .clearfix:after {
     content: "";
