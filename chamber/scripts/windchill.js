@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', function(){
         
+     // Get the temperature and wind speed elements from the HTML document
+     let temperatureElement = document.getElementById("temperature");
+     let windSpeedElement = document.getElementById("wind-speed");
+     
+     // Get the values of temperature and wind speed
+     let temperature = parseFloat(temperatureElement.textContent);
+     let windSpeed = parseFloat(windSpeedElement.textContent);
+     
+     // Calculate the wind chill factor
+     let windChill = calculateWindChill(temperature, windSpeed);
+     
+     // Update the HTML with the wind chill value
+     let weatherElement = document.getElementById("weather");
+     weatherElement.innerHTML += "<p>Wind Chill: " + windChill + "°F</p>";
+
     // Function to calculate the wind chill factor
     function calculateWindChill(temperature, windSpeed) {
         // Check if the temperature and wind speed meet the specification limits
@@ -13,18 +28,5 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
     
-    // Get the temperature and wind speed elements from the HTML document
-    let temperatureElement = document.getElementById("temperature");
-    let windSpeedElement = document.getElementById("wind-speed");
-    
-    // Get the values of temperature and wind speed
-    let temperature = parseFloat(temperatureElement.textContent);
-    let windSpeed = parseFloat(windSpeedElement.textContent);
-    
-    // Calculate the wind chill factor
-    let windChill = calculateWindChill(temperature, windSpeed);
-    
-    // Update the HTML with the wind chill value
-    let weatherElement = document.getElementById("weather");
-    weatherElement.innerHTML += "<p>Wind Chill: " + windChill + "°F</p>";
+   
 });
