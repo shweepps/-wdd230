@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     footeEl.innerHTML = msgFooter + siteName + logo + msgSecond + map;
-
+   
     function toggleMenu(){
         
         document.getElementById("primaryNav").classList.toggle("open");
@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const btn = document.getElementById("hamBtn");
     btn.onclick = toggleMenu;
+
 
 });
 
