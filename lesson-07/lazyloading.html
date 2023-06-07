@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lazy Load Example</title>
+    <script src="script.js"></script>
+    <style>
+        .placeholder {
+            background-color: #ddd;
+            color: #000;
+            text-align: center;
+        }
+        .picture {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .picture img {
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lazy Load Example</h1>
+
+    <div class="picture">
+        <picture>
+            <img class="lazy" src="images/Placeholder.png" data-src="image1.jpg" alt="Image 1">
+        </picture>
+    </div>
+
+    <div class="picture">
+        <picture>
+            <img class="lazy" src="images/Placeholder.png" data-src="images/images.png" alt="Image 2">
+        </picture>
+    </div>
+
+    <div class="picture">
+        <picture>
+            <img class="lazy" src="images/Placeholder.png" data-src="image3.jpg" alt="Image 3">
+        </picture>
+    </div>
+
+    <div class="picture">
+        <picture>
+            <img class="lazy" src="images/Placeholder.png" data-src="image4.jpg" alt="Image 4">
+        </picture>
+    </div>
+
+    <div class="picture">
+        <picture>
+            <img class="lazy" src="images/Placeholder.png" data-src="image5.jpg" alt="Image 5">
+        </picture>
+    </div>
+
+
+</body>
+</html>
