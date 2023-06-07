@@ -86,6 +86,8 @@
         margin: 5px; /* Adjust the margin as needed */
       }
     
-    
+    picture img{
+        width: 300px;
+    }
 
 }

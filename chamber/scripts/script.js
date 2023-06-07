@@ -41,6 +41,45 @@ document.addEventListener('DOMContentLoaded', function(){
     const btn = document.getElementById("hamBtn");
     btn.onclick = toggleMenu;
 
+    const lastVisit = localStorage.getItem('lastVisit');
+                  if (lastVisit) {
+                    const daysSinceLastVisit = Math.round((Date.now() - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
+                    document.getElementById('last-visit').textContent = `Days since your last visit: ${daysSinceLastVisit}`;
+                  } else {
+                    document.getElementById('last-visit').textContent = "Welcome! It seems this is your first visit.";
+                  }
+                  localStorage.setItem('lastVisit', new Date());
+
+
+
+
+        const lazyImages = document.querySelectorAll('.lazy');
+
+        const lazyLoad = (image) => {
+            image.setAttribute('src', image.getAttribute('data-src'));
+            image.onload = () => {
+                image.removeAttribute('data-src');
+                image.classList.add('loaded');
+            };
+        };
+    
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    lazyLoad(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+    
+        lazyImages.forEach(image => {
+            observer.observe(image);
+        });
 
 });
 

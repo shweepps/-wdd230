@@ -1,6 +1,4 @@
 body {
-    
-    
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr;
@@ -17,6 +15,7 @@ picture img {
     object-fit: cover;
     object-position: center;
     box-shadow: 2px 2px 4px #2f2f2f;
+    
 }
 picture img.in {
     animation: img-come-in 1s;
