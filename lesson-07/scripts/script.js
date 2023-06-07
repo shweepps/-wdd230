@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
     const lazyImages = document.querySelectorAll('.lazy');
 
     const lazyLoad = (image) => {

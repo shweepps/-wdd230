@@ -1,6 +1,6 @@
 body {
-    background-image: linear-gradient(45deg,rgb(128, 128, 128),rgb(30, 128, 141));
-    background-attachment: fixed;
+    
+    
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr;
@@ -26,7 +26,7 @@ picture img.in {
 
 @keyframes img-come-in {
     from {
-        transform: scale(0.9);
+        transform: scale(2);
         opacity: 0;
     }
     to {
