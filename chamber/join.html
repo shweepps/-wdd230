@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Moshoeshoe S Mopeli WDD 230 Assignment chamber for Brigham Young University - Idaho WDD 230 Web Frontend Development ">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/script.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <title>SACCI</title>
+</head>
+<style>
+    main{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        align-items: center;
+        background-color: aquamarine;
+        width: 80%;
+        align-self: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .membership-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .membership-benefits ul {
+        list-style-type: none;
+        padding: 0;
+        align-items: center;
+    }
+
+    .membership-benefits ul li {
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    
+</style>
+<body>
+ 
+    <div class="banner" id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
+        
+    <header class="headcolor">
+        <!-- header content goes here 
+       --><img src="images/SACCI-logo.png" alt="#">
+        <div>South African Chamber of Commerce and Industry</div>
+        <time>time</time>
+        
+        <div>
+            <a href="https://www.linkedin.com/in/simon-mopeli-2a7659134" target="_blank" rel="noopener noreferrer">
+                <img class="linkedin" src="images/linkedin-logo.png" alt="LinkedIn Logo">
+            </a>
+            <a href="https://github.com/shweepps" target="_blank" rel="noopener noreferrer">
+                <img class="github" src="images/github-logo.png" alt="GitHub Logo">
+            </a>
+        </div>
+        <nav>
+            <button id="hamBtn" onclick="toggleMenu"><span>&#9776;</span> <span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li ><a href="discovery.html">Discovery</a></li>
+                <li class="active"><a href="join.html">Join</a></li></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           
+            <ul id="primaryNa">
+               
+            </ul>
+        </nav>
+        <img src="#" alt="">
+        <img src="#" alt="">
+    </header>
+
+   
+    <main>
+        <h1>Join Our Membership</h1>
+        <form action="thankyou.html" method="get">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
+    
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
+    
+          <label for="position">Business Position Title:</label>
+          <input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}" title="Please enter a minimum of seven characters using only alphabets, hyphens, and spaces.">
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+          <label for="phone">Cell Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+    
+          <label for="business-name">Business Name/Title:</label>
+          <input type="text" id="business-name" name="business-name" required>
+    
+          <label for="membership-level">Membership Level:</label>
+          <select id="membership-level" name="membership-level">
+            <option value="NP">NP Membership</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+    
+          <label for="business-description">Business Description:</label>
+          <textarea id="business-description" name="business-description"></textarea>
+    
+          <input type="hidden" id="form-loaded-date" name="form-loaded-date" value="">
+    
+          <input type="submit" value="Submit">
+        </form>
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: No fee</li>
+                <li>Bronze Membership: Training opportunities</li>
+                <li>Silver Membership: Advertising on home page spotlights</li>
+                <li>Gold Membership: Event discounts</li>
+            </ul>
+        </div>
+      </main>
+
+<footer > 
+    <!-- footer content goes here -->
+    <img src="" alt="">
+    <p>Contact Info</p>
+    <p href="">Map</p>
+</footer>
+
+</html>
