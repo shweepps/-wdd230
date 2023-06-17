@@ -36,12 +36,12 @@ body {
     box-shadow: 0 0 20px #222222;
     height: 200px;
     border: 1px solid #333;
-    border-radius: 10ch;
+    border-radius: 3ch;
     padding: 10px;
     background-color: rgb(161, 159, 151);
 }
 .imgs:hover {
-    
+    border-radius: 10ch;
     transform: scale(1.05);
 }
 .names {
