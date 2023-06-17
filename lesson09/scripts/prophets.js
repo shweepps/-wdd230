@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         h2.setAttribute('class', 'names');
   
         card.setAttribute('class', 'card');
-        card.setAttribute('data-length', prophet.length); // Add the data-length attribute
-      
+        card.setAttribute('data-length', prophet.length); 
         portrait.setAttribute('class', 'imgs');
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${getProphetNumberSuffix(index + 1)} Latter-day President`);

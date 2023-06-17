@@ -48,7 +48,14 @@ body {
     color: rgb(125, 196, 231);
     text-shadow: 2px 2px 5px rgb(10, 10, 10);
 }
+button{
+   
+    width: 100px;
+   
+
+}
 footer{
+
     background-color: rgb(125, 196, 231);
     text-align: center;
     border:1px solid #0b0a0a ;
