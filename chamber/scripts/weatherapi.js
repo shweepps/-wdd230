@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const cityName = 'Fairbanks';
   const units = 'imperial';
-  const appId = 'd6fa1434205326c55483598917053e46'; // Replace with your own registered application id
+  const appId = 'd6fa1434205326c55483598917053e46'; 
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${units}&appid=${appId}`;
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // this is for testing the call
+        console.log(data); 
         displayResults(data);
       } else {
         throw new Error(await response.text());
