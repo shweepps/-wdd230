@@ -9,48 +9,12 @@
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/join.css">
         <script src="scripts/script.js"></script>
         <script src="scripts/windchill.js"></script>
         <title>SACCI</title>
 </head>
-<style>
-    main{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        align-items: center;
-        background-color: aquamarine;
-        width: 80%;
-        align-self: center;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .membership-benefits {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .membership-benefits ul {
-        list-style-type: none;
-        padding: 0;
-        align-items: center;
-    }
-
-    .membership-benefits ul li {
-        margin-bottom: 10px;
-        align-items: center;
-    }
-    
-</style>
+\
 <body>
  
     <div class="banner" id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
@@ -75,7 +39,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li ><a href="discovery.html">Discovery</a></li>
                 <li class="active"><a href="join.html">Join</a></li></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
            
             <ul id="primaryNa">
@@ -88,7 +52,7 @@
 
    
     <main>
-        <h1>Join Our Membership</h1>
+        <h1 id="join-header">Join Our Membership</h1>
         <form action="thankyou.html" method="get">
           <label for="first-name">First Name:</label>
           <input type="text" id="first-name" name="first-name" required>

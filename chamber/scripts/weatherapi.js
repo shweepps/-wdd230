@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function displayResults(weatherData) {
   const currentTemp = document.querySelector('#current-temp'); // Define currentTemp variable here
 
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)} &deg;F </strong>`;
 
   const iconSrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;

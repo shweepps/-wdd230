@@ -1,0 +1,52 @@
+main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    background-color: aquamarine;
+    width: 80%;
+    align-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.membership-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+.membership-benefits ul li {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/*Medium */
+@media only screen and (min-width: 32.5em) {
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}

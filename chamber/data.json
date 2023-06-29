@@ -1,0 +1,85 @@
+{
+  "companies": [
+    {
+      "name": "Hilton Hotel",
+      "address": "138 Rivonia Road Sandton, 2196, South Africa",
+      "phone": "+27 11 322 1888",
+      "website": "https://www.hilton.com/en/hotels/jnbsatw-hilton-sandton/",
+      "image": "images/hilton.avif",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "XYZ Corporation",
+      "address": "456 Elm Street",
+      "phone": "987-654-3210",
+      "website": "https://www.xyzcorp.com",
+      "image": "xyz.png",
+      "membershipLevel": "Silver",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "CompanyZ",
+      "address": "789 Oak Avenue",
+      "phone": "555-123-4567",
+      "website": "https://www.company3.com",
+      "image": "company3.png",
+      "membershipLevel": "Bronze",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company B",
+      "address": "321 Cedar Road",
+      "phone": "555-987-6543",
+      "website": "https://www.company4.com",
+      "image": "company4.png",
+      "membershipLevel": "Silver",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company Z",
+      "address": "567 Pine Street",
+      "phone": "555-789-1234",
+      "website": "https://www.company5.com",
+      "image": "company5.png",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company P",
+      "address": "901 Maple Avenue",
+      "phone": "555-234-5678",
+      "website": "https://www.company6.com",
+      "image": "company6.png",
+      "membershipLevel": "Bronze",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company L",
+      "address": "234 Elm Street",
+      "phone": "555-876-5432",
+      "website": "https://www.company7.com",
+      "image": "company7.png",
+      "membershipLevel": "Silver",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company Q",
+      "address": "678 Oak Avenue",
+      "phone": "555-345-6789",
+      "website": "https://www.company8.com",
+      "image": "company8.png",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company T",
+      "address": "432 Pine Street",
+      "phone": "555-987-6543",
+      "website": "https://www.company9.com",
+      "image": "company9.png",
+      "membershipLevel": "Bronze",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}

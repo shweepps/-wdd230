@@ -157,3 +157,76 @@ footer{
     border: 1px solid black;
     background-color: aqua;
 }
+
+/***Directory***/
+
+.directorymenu {
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0;
+  }
+  
+  .directorymenu button {
+    padding: 15px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    background-color: #f0f0f0;
+  }
+  
+  .cards section {
+    padding: 15px;
+  }
+  
+  .cards section img {
+    width: 500px;
+  }
+  
+  .cards section a {
+    word-wrap: break-word;
+    font-size: 15px;
+    color: #000;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  
+  .grid section {
+    flex-direction: column;
+  }
+  
+  .grid section > * {
+    margin: 2px;
+  }
+  
+  .list section:nth-child(even) {
+    background-color: rgba(37, 150, 190, 0.5);
+  }
+  
+  .cards section h2 {
+    font-size: 24px;
+  }
+  
+  .cards {
+    margin: 15px 0;
+  }
+
+
+  .grid section:nth-child(7) {
+    /* Styling for Company 7 card */
+    display: none;
+  }
+  
+  /**
+  join CSS
+  
+  **/
+
+  
+  /**end Join **/
