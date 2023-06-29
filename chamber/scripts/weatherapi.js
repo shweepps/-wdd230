@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const weatherIcon = document.querySelector('#weather-icon');
   const captionDesc = document.querySelector('figcaption');
 
-  const cityName = 'Fairbanks';
-  const units = 'imperial';
+  const cityName = 'phalaborwa';
+  const units = 'metric';
   const appId = 'd6fa1434205326c55483598917053e46'; 
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${units}&appid=${appId}`;
@@ -41,7 +41,7 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute('alt', desc);
 
   const captionDesc = document.querySelector('figcaption'); // Define captionDesc variable here
-  captionDesc.textContent = capitalizeFirstLetter(desc);
+  captionDesc.innerHTML =`<p> ${capitalizeFirstLetter(desc)} tested</p>` ;
 }
 
 function capitalizeFirstLetter(str) {
