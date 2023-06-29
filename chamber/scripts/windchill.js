@@ -17,8 +17,13 @@ document.addEventListener('DOMContentLoaded', function(){
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); 
         displayResults(data);
+        // Update the wind chill value after displaying results
+        let temperature = parseFloat(data.main.temp);
+        let windSpeed = parseFloat(data.wind.speed);
+        let windChill = calculateWindChill(temperature, windSpeed);
+        let weatherElement = document.getElementById("weather");
+        weatherElement.innerHTML += "<p>Wind Chill: " + windChill + "°C</p>";
       } else {
         throw new Error(await response.text());
       }
@@ -61,17 +66,6 @@ document.addEventListener('DOMContentLoaded', function(){
       
       
 
-   // Get the values of temperature and wind speed
-   let temperature = parseFloat(temperatureElement.textContent);
-   let windSpeed = parseFloat(windSpeedElement.textContent);
-   
-   // Calculate the wind chill factor
-   
-   let windChill = calculateWindChill(temperature, windSpeed);
-   
-   // Update the HTML with the wind chill value
-   let weatherElement = document.getElementById("weather");
-   weatherElement.innerHTML += "<p>Wind Chill: " + windChill + "°C</p>";
 
   // Function to calculate the wind chill factor
   function calculateWindChill(temperature, windSpeed) {
