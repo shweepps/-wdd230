@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
+        console.log(data);
         displayResults(data);
         // Update the wind chill value after displaying results
         let temperature = parseFloat(data.main.temp);
@@ -36,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function(){
         
     
 
-
     function displayResults(weatherData) {
         const currentTemp = document.querySelector('#temperature'); // Define currentTemp variable here
         const windspeed = document.querySelector('#wind-speed');
@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function(){
         windspeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
         
       
-        const iconSrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+        const iconSrc = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
+
         const desc = weatherData.weather[0].description;
       
         const weatherIcon = document.querySelector('#weather-icon'); // Define weatherIcon variable here
@@ -79,4 +80,5 @@ document.addEventListener('DOMContentLoaded', function(){
           return "N/A"; // Return "N/A" if the input values do not meet the requirements
       }
   }
+  
 });

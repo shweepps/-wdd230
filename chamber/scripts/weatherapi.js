@@ -41,9 +41,10 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute('alt', desc);
 
   const captionDesc = document.querySelector('figcaption'); // Define captionDesc variable here
-  captionDesc.innerHTML =`<p> ${capitalizeFirstLetter(desc)} tested</p>` ;
+  captionDesc.innerHTML =`<p> ${capitalizeFirstLetter(desc)}</p>` ;
 }
 
 function capitalizeFirstLetter(str) {
+
   return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }

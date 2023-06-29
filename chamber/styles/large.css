@@ -2,7 +2,8 @@
    
     main{
         display: grid;
-        
+        width: auto;
+        min-width: 610px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
@@ -58,6 +59,7 @@
     }
     #sidebar{
         grid-area: sidebar;
+       
     }
     #news{
         grid-area: news;
@@ -81,6 +83,11 @@
         align-items: center;
         height: 100px; /* Adjust the height as needed */
       }
+    img#weather-icon{
+    
+        width: 200px;
+        height: 200px;
+    }
       
       #weather-info p {
         margin: 5px; /* Adjust the margin as needed */
