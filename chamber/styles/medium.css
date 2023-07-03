@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 510px) {
 
     header{
         width: 100%;
@@ -66,7 +66,87 @@
         
     }
 
-   
-      
+   /*join*/
+
+
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+
+   /*join end*/
+
+
+/***Discovery***/
+#discovery{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+}
+/*Discovery end*/
+
+
+
+/*Directory*/
+
+.directory{
+    display: block;
+    text-align: center;
+
+}
+
+.directorymenu{
+    background-color: navy ;
+
+}
+
+#cards{
+    display: block;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    border: 4px solid gold;
+
+    }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    row-gap: 20px;
+    border: 4px double black;
+    padding: auto;
+    box-shadow: 0 0 10px #0b0a0a;
+    padding: 20px;
+    
+}
+.cards.grid section.member {
+    border: 4px double black;
+    width: auto;
+
+}
+.grid.cards img{
+
+    border-radius: 50px;
+    width: 100%;
+    height: 300px;
+}
 
 }

@@ -189,6 +189,17 @@ footer{
     font-size: 15px;
     color: #000;
   }
+  .cards.grid section.member {
+    border: 4px double blue;
+    width: auto;
+
+}
+.grid.cards img{
+
+    border-radius: 50px;
+    width: 100%;
+    height: 300px;
+}
   
   .grid {
     display: grid;
@@ -205,9 +216,7 @@ footer{
     margin: 2px;
   }
   
-  .list section:nth-child(even) {
-    background-color: rgba(37, 150, 190, 0.5);
-  }
+  
   
   .cards section h2 {
     font-size: 24px;
@@ -220,7 +229,7 @@ footer{
 
   .grid section:nth-child(7) {
     /* Styling for Company 7 card */
-    display: none;
+    display: block;
   }
   
   /**

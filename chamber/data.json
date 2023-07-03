@@ -10,74 +10,74 @@
       "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "name": "XYZ Corporation",
-      "address": "456 Elm Street",
-      "phone": "987-654-3210",
-      "website": "https://www.xyzcorp.com",
-      "image": "xyz.png",
+      "name": "BON Hotel Bloemfontein Central",
+      "address": "BLOEM PLAZA EAST BURGER STREET, 9301 Bloemfontein - Free State",
+      "phone": "+49 221 2077 600",
+      "website": "https://www.hrs.com/en/hotel/bon-hotel-bloemfontein-central/a-619341/",
+      "image": "images/protea.jpg",
       "membershipLevel": "Silver",
       "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "name": "CompanyZ",
-      "address": "789 Oak Avenue",
-      "phone": "555-123-4567",
-      "website": "https://www.company3.com",
-      "image": "company3.png",
-      "membershipLevel": "Bronze",
-      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "name": "Company B",
-      "address": "321 Cedar Road",
-      "phone": "555-987-6543",
-      "website": "https://www.company4.com",
-      "image": "company4.png",
-      "membershipLevel": "Silver",
-      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "name": "Company Z",
-      "address": "567 Pine Street",
-      "phone": "555-789-1234",
-      "website": "https://www.company5.com",
-      "image": "company5.png",
+      "name": "The Blue Gem Restaurant",
+      "address": "Shop 76 + 77, Preller Square Centre, Dan Pienaar, Bloemfontein, 9301",
+      "phone": "+27 51 436 0742",
+      "website": "https://www.thebluegem.co.za/home/",
+      "image": "images/Bluegem.jpg",
       "membershipLevel": "Gold",
       "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "name": "Company P",
-      "address": "901 Maple Avenue",
-      "phone": "555-234-5678",
-      "website": "https://www.company6.com",
-      "image": "company6.png",
-      "membershipLevel": "Bronze",
-      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "name": "Company L",
-      "address": "234 Elm Street",
-      "phone": "555-876-5432",
-      "website": "https://www.company7.com",
-      "image": "company7.png",
+      "name": "NEW YORK RESTAURANT",
+      "address": "c/o 2nd Ave & Reid Street,Westdene Bloemfontein",
+      "phone": "+27 51 447 7279",
+      "website": "https://newyorkrestaurant.co.za/index.php",
+      "image": "images/Newyork.jpg",
       "membershipLevel": "Silver",
       "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "name": "Company Q",
+      "name": "Palm Lodge",
+      "address": "10 Stapelberg Street Bloemfontein 9301",
+      "phone": "+27 (0)51 444 6982",
+      "website": "https://www.palmlodge.co.za/",
+      "image": "images/palm.webp",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "View Lodge",
+      "address": "Tarentaal straat, 20 Gariep Dam,9922",
+      "phone": "082 879 4262",
+      "website": "https://viewlodge.co.za/",
+      "image": "images/viewlodge.jpg",
+      "membershipLevel": "Bronze",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "FOREVER RESORT",
+      "address": "867 Francis Baard Street",
+      "phone": "+27(0)12 423 5600",
+      "website": "https://www.forevergariep.co.za/",
+      "image": "images/forever.jpg",
+      "membershipLevel": "Silver",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Investec",
       "address": "678 Oak Avenue",
-      "phone": "555-345-6789",
-      "website": "https://www.company8.com",
-      "image": "company8.png",
+      "phone": "+27 (11) 286 7000",
+      "website": "https://www.investec.com/",
+      "image": "images/invest.avif",
       "membershipLevel": "Gold",
       "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "name": "Company T",
-      "address": "432 Pine Street",
-      "phone": "555-987-6543",
-      "website": "https://www.company9.com",
-      "image": "company9.png",
+      "name": "RMB",
+      "address": "Think Precinct 1 Merchant Place Cnr Fredman Drive & Rivonia Road Sandton 2196",
+      "phone": "+27 11 282 8000",
+      "website": "https://www.rmb.co.za/",
+      "image": "images/RMB.webp",
       "membershipLevel": "Bronze",
       "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }

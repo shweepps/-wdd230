@@ -1,16 +1,17 @@
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 810px) {
    
     main{
         display: grid;
-        width: auto;
-        min-width: 610px;
+        width: 97%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
         "event hero hero sidebar"
         "weather hero hero sidebar"
         "join news news sidebar";
-
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
         grid-gap: .4rem;
 
     }
@@ -96,5 +97,81 @@
     picture img{
         width: 300px;
     }
+
+
+
+/*join*/
+
+#join{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    background-color: aquamarine;
+    width: 80%;
+    align-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.membership-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+.membership-benefits ul li {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/*join end*/
+
+
+
+
+/*Directory*/
+
+.directory{
+    display: block;
+    text-align: center;
+
+}
+.directorymenu{
+    background-color: red;
+    }  
+ 
+.grid section:nth-child(5) {
+    
+    display: none;
+  }
+  .grid section:nth-child(7) {
+    /* Styling for Company 7 card */
+    display: block;
+  }
+  .list section:nth-child(5){
+    display: none;
+  }
+
+  .grid.cards img{
+
+    border-radius: 50px;
+    width: 70%;
+    height: 300px;
+}
+
 
 }
