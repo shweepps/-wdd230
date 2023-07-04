@@ -13,7 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const shuffledCompanies = shuffleArray(data.companies);
             const spotlights = document.getElementsByClassName('spotlight');
 
-            for (let i = 0; i < spotlights.length; i++) {
+            const screenSize = window.innerWidth;
+            let numSpotlights = 2; // Default number of spotlights for medium and small screens
+
+            if (screenSize >= 1024) {
+                numSpotlights = 3; // Display 3 spotlights for large screens
+            }
+
+            for (let i = 0; i < numSpotlights; i++) {
                 const spotlight = spotlights[i];
                 const company = shuffledCompanies[i];
 
