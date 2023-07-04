@@ -110,12 +110,17 @@ aside{
     display: none;
 
 }
-.spotlight img{
+.spotlight{
+  margin: auto;
+  padding: 50px;
+  border: 1px solid blue;
+  width: 250px;
+ }
+  .spotlight img{
 
-  width: 100%;
-  height: 60%;
-}
-
+      width: 100%;
+      height: 250px;
+  }
 .open span:nth-child(1){
     display: none;
 }
