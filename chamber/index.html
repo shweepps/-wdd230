@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Moshoeshoe S Mopeli WDD 230 Assignment chamber for Brigham Young University - Idaho WDD 230 Web Frontend Development ">
-        <link rel="stylesheet" href="styles/small.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">
-        <script src="scripts/script.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <title>SACCI</title>
+        content="Moshoeshoe S Mopeli WDD 230 Assignment chamber for Brigham Young University - Idaho WDD 230 Web Frontend Development">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <title>SACCI</title>
 </head>
+
 <body>
- 
     <div class="banner" id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</div>
-        
+
     <header class="headcolor">
-        <!-- header content goes here -->
         <img src="images/SACCI-logo.png" alt="#">
         <div>South African Chamber of Commerce and Industry</div>
-        <time>time</time>
+        <time id="current-time"></time>
         <p id="last-visit"></p>
         <div>
-            
             <a href="https://www.linkedin.com/in/simon-mopeli-2a7659134/" target="_blank" rel="noopener noreferrer">
                 <img class="linkedin" src="images/linkedin-logo.png" alt="LinkedIn Logo">
             </a>
             <a href="https://github.com/shweepps" target="_blank" rel="noopener noreferrer">
                 <img class="github" src="images/github-logo.png" alt="GitHub Logo">
             </a>
-           
         </div>
         <nav>
-            <button id="hamBtn" onclick="toggleMenu"><span>&#9776;</span> <span>X</span></button>
+            <button id="hamBtn" onclick="toggleMenu()"><span>&#9776;</span> <span>X</span></button>
             <ul id="primaryNav">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="discovery.html">Discovery</a></li>
-                <li><a href="join.html">Join</a></li></li>
-                <li><a href="directory.html">directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
-           
-            <ul id="primaryNa">
-               
-            </ul>
+            <ul id="primaryNa"></ul>
         </nav>
-        <img src="#" alt="">
-        <img src="#" alt="">
+        <img src="#" alt="" id="header-image">
+        <img src="#" alt="" id="header-image-mobile">
     </header>
 
     <main>
-        <!-- main content goes here -->
-        
-        
-        <section class="sections" id="hero"><img src="images/wdd230-org.jpg" alt="city"
-            srcset="images/wdd230-large.jpg 1x, images/wdd230-medium.jpg 2x, images/wdd230-small.jpg 3x"></section>
-        <section class="sections" id="event">event(s)</section>
+        <section class="sections" id="hero">
+            <img src="images/city-915x700.jpg" alt="city">
+        </section>
+        <section class="sections" id="event">
+            <h2>Event(s)</h2>
+            <p>No upcoming events</p>
+        </section>
         <section class="sections" id="news">
             <h4>News Release</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Doloribus voluptas eaque sed ad, tempora maiores, ipsa veritatis 
-                incidunt illum architecto repellat veniam. Sed aperiam cum eaque. 
-                Dignissimos totam quae vitae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas eaque sed ad, tempora
+                maiores, ipsa veritatis incidunt illum architecto repellat veniam. Sed aperiam cum eaque. Dignissimos
+                totam quae vitae.</p>
         </section>
-       
         <section class="sections" id="weather">
             <h2>Weather</h2>
-            <img src="" alt="" id="weather-icon" />
+            <img src="" alt="" id="weather-icon">
             <div id="weather-info">
-              <p>Temperature: <span id="temperature"></span></p>
-              <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
-              
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
             </div>
             <figcaption></figcaption>
-          </section>
-          
-          
-        <section class="sections" id="join">join</section>
+        </section>
+        <section class="sections" id="join">
+            <h2>Join</h2>
+            <!-- Add your join content here -->
+        </section>
         <aside class="sections" id="sidebar">
-            <div class="sport">sportlight 1</div>
-            <div class="sport">sportlight 2</div>
-            <div class="sport">sportlight 3 </div>
-
+            <div id="spotlight1" class="spotlight">
+                <h3></h3>
+                <a href="" target="_blank"><img src="" alt=""></a>
+                <p></p>
+            </div>
+            <div id="spotlight2" class="spotlight">
+                <h3></h3>
+                <a href="" target="_blank"><img src="" alt=""></a>
+                <p></p>
+            </div>
+            <div id="spotlight3" class="spotlight">
+                <h3></h3>
+                <a href="" target="_blank"><img src="" alt=""></a>
+                <p></p>
+            </div>
         </aside>
-        
     </main>
-</body>
 
-<footer > 
-    <!-- footer content goes here -->
-    
-    <img src="" alt="">
-    <p>Contact Info</p>
-    <p href="">Map</p>
-</footer>
+    <footer>
+        <img src="" alt="">
+        <p>Contact Info</p>
+        <a href="">Map</a>
+    </footer>
+</body>
 
 </html>

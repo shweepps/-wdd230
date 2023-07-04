@@ -94,7 +94,21 @@
     border: 1px solid black;
     align-items: center;
 }
-/*Discovery end*/
+
+figure{
+    
+    width: 300px;
+
+}
+
+.grid.cards img{
+
+    border-radius: 50px;
+    width: 20%;
+    height: 80%;
+}
+
+/*Discovery End*/
 
 
 
