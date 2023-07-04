@@ -13,6 +13,7 @@
         justify-self: center;
         justify-items: center;
         grid-gap: .4rem;
+        
 
     }
     
@@ -30,7 +31,11 @@
         border-right: 1px solid black;
     }
 
-   
+   .spotlight{
+    margin: auto;
+    padding: 50px;
+    border: 1px solid blue;
+   }
     .spotlight img{
 
         width: 100%;
