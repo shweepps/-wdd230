@@ -81,5 +81,9 @@ document.addEventListener('DOMContentLoaded', function(){
             observer.observe(image);
         });
 
+        
+        //join
+        
+
 });
 

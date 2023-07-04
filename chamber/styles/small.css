@@ -259,3 +259,48 @@ figure .lazy{
 
 
   /**end Discovery **/
+
+
+  /*Join*/
+
+
+  #join-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    background-color: aquamarine;
+    width: 80%;
+    align-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+#user-info, #memberLevel{
+  width: 90%;
+  margin: 20px;
+
+}
+#user-info input {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25px;
+}
+
+  .memLvlLbl {
+    display: block;
+  }
+  
+  .memLvlRdo {
+    float: left;
+    margin-right: 10px;
+  }
+
+  /*Join End*/
