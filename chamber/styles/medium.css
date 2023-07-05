@@ -16,7 +16,12 @@
         grid-column: span 3;
         
     }
+ #weather-info p{
+    font-size: 0.7rem; 
+    margin-top: 0px;
+    overflow: hidden;
 
+ }
     .spotlight img{
 
         width: 100%;
