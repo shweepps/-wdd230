@@ -39,9 +39,10 @@
     }
 
    .spotlight{
-    margin: auto;
+    margin: 10px auto 10px;
     padding: 50px;
     border: 1px solid blue;
+    width: auto;
    }
     .spotlight img{
 
