@@ -16,7 +16,14 @@
         
 
     }
-    
+
+    header{
+        
+            width: 96%;
+            margin: 10px;
+            border: 1px solid black;
+        
+    }
    nav ul#primaryNav{
     display: flex;
     margin-left: 2vw;
