@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/script.js"></script>
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -76,10 +77,18 @@
         
        
      
-        <section>
-            <h2>Weather Card</h2>
-            <p>Stay informed about the current weather conditions in Carlsbad. Our weather card provides real-time updates, 
-                ensuring you are prepared for any outdoor adventures or cozy moments indoors.</p>
+        <section id="weather">
+            <h2>Weather </h2>
+            <p>
+                Stay informed about the current weather 
+                conditions in Carlsbad.
+            </p>
+            <div>
+                <p>Curret Tempeture</p>
+                <p id="current">Tempeture</p>
+            </div>
+            
+            <div id="forecast">Loading...</div>
             <!-- Add your weather card here -->
         </section>
         <section>
@@ -87,7 +96,7 @@
             <p>Share your passion for specialty fruit drinks with us! Our information card displays the total number of specialty drinks submitted by users. Be part of the community and contribute your own unique creations.</p>
         </section>
     </main>
-    <script src="scripts/script.js"></script>
+  
     <footer>
         <p>Experience the abundance of fresh and healthy options at Bountiful Foods. Start your journey today!</p>
     </footer>
