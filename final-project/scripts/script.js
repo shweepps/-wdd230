@@ -34,76 +34,71 @@ document.addEventListener('DOMContentLoaded', function(){
             console.log(error);
         }
     }
+async function apiDay() {
+    try {
+        const respond = await fetch(urlDay);
+        if (respond.ok) {
+            const dataDay = await respond.json();
+            console.log(dataDay);
+            const forecastDiv = document.getElementById("forecast");
+            forecastDiv.innerHTML = "<h2>3-Day Forecast</h2>";
 
-    async function apiDay(){
-        try{
-            const respond = await fetch(urlDay);
-            if(respond.ok){
-                const dataDay = await respond.json();
-                console.log(dataDay);
-                const forecastDiv = document.getElementById("forecast");
-                forecastDiv.innerHTML = "<h2>3-Day Forecast</h2>";
-    
-                // Group the forecast data by day
-                const forecastList = dataDay.list;
-                const forecastByDay = {};
-                forecastList.forEach((item) => {
-                    const date = new Date(item.dt_txt);
-                    const day = date.toLocaleDateString(undefined, { weekday: 'long' });
-                    if (!forecastByDay[day]) {
-                        forecastByDay[day] = {
-                            temps: [],
-                            conditions: [],
-                            humidity: [],
-                            icons: []
-                        };
-                    }
-                    forecastByDay[day].temps.push(item.main.temp);
-                    forecastByDay[day].conditions.push(item.weather[0].description);
-                    forecastByDay[day].humidity.push(item.main.humidity);
-                    forecastByDay[day].icons.push(item.weather[0].icon);
-                });
-    
-                // Get the next 3 days of forecast
-                
-                const forecastDates = Object.keys(forecastByDay).slice(0, 3);
-    
-                // Get the current day of the week
-                const currentDate = new Date();
-                const currentDay = currentDate.toLocaleDateString(undefined, { weekday: 'long' });
-    
-                // Display the 3-day forecast
-                forecastDates.forEach((day) => {
-                    const tempMin = Math.min(...forecastByDay[day].temps);
-                    const tempMax = Math.max(...forecastByDay[day].temps);
-                    const condition = forecastByDay[day].conditions[0];
-                    const humidity = forecastByDay[day].humidity.reduce((sum, h) => sum + h, 0) / forecastByDay[day].humidity.length;
-                    const iconSrc = forecastByDay[day].icons[0] + "@4x"; // Add @4x to the icon URL
-                    const iconSr = forecastByDay[day].icons[0] ;
-                    
+            // Group the forecast data by day
+            const forecastList = dataDay.list;
+            const forecastByDay = {};
+            forecastList.forEach((item) => {
+                const date = new Date(item.dt_txt);
+                const day = date.toLocaleDateString(undefined, { weekday: 'short' }); // Use 'short' instead of 'long'
+                if (!forecastByDay[day]) {
+                    forecastByDay[day] = {
+                        temps: [],
+                        conditions: [],
+                        humidity: [],
+                        icons: []
+                    };
+                }
+                forecastByDay[day].temps.push(item.main.temp);
+                forecastByDay[day].conditions.push(item.weather[0].description);
+                forecastByDay[day].humidity.push(item.main.humidity);
+                forecastByDay[day].icons.push(item.weather[0].icon);
+            });
 
-                    const forecastItem = document.createElement("div");
-                    forecastItem.setAttribute("id","threeday");
-                    const dayText = day === currentDay ? "Today" : day;
-                    //<img src="https://openweathermap.org/img/wn/${iconSrc}.png" alt="Weather Icon">
-                    forecastItem.innerHTML = `
-                        <p class="day"><strong>${dayText}</strong>
-                        <img class="icon-temp" src="https://openweathermap.org/img/w/${iconSr}.png" alt="Weather Icon"> </p>
-                        <p class="con">Condition: ${condition}</p>
-                        <p >Min Temperature: ${tempMin.toFixed(0)} &deg;F</p>
-                        <p class=""min-temp">Max Temperature: ${tempMax.toFixed(0)} &deg;F</p>
-                        <p class="humid">Average Humidity: ${humidity.toFixed(0)}%</p><br/>
-                        
-                    `
-    
-                    forecastDiv.appendChild(forecastItem);
-                });
-            }
-        }catch (error){
-            console.log(error);
+            // Get the next 3 days of forecast
+            const forecastDates = Object.keys(forecastByDay).slice(0, 3);
+
+            // Get the current day of the week
+            const currentDate = new Date();
+            const currentDay = currentDate.toLocaleDateString(undefined, { weekday: 'short' }); // Use 'short' instead of 'long'
+            
+            // Display the 3-day forecast
+            forecastDates.forEach((day) => {
+                const tempMin = Math.min(...forecastByDay[day].temps);
+                const tempMax = Math.max(...forecastByDay[day].temps);
+                const condition = forecastByDay[day].conditions[0];
+                const humidity = forecastByDay[day].humidity.reduce((sum, h) => sum + h, 0) / forecastByDay[day].humidity.length;
+                const iconSrc = forecastByDay[day].icons[0] + "@4x"; // Add @4x to the icon URL
+                const iconSr = forecastByDay[day].icons[0];
+
+                const forecastItem = document.createElement("div");
+                forecastItem.setAttribute("id", "threeday");
+                const dayText = day === currentDay ? "Today" : day;
+
+                forecastItem.innerHTML = `
+                    <p class="day"><strong>${dayText}</strong></p>
+                    <p class="con"> ${condition}</p>
+                    <img class="icon-temp" src="https://openweathermap.org/img/w/${iconSr}.png" alt="Weather Icon"> </p>
+                    <p>Low: ${tempMin.toFixed(0)} &deg;F</p>
+                    <p>High: ${tempMax.toFixed(0)} &deg;F</p>
+                `;
+
+                forecastDiv.appendChild(forecastItem);
+            });
         }
+    } catch (error) {
+        console.log(error);
     }
-    
+}
+
     
     
 

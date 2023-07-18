@@ -127,10 +127,18 @@ nav ul.open{
 }
 
 #forecast {
-    display: grid;
     
     border: 1px solid black;
-    place-items: center;
+    
+  }
+  #threeday img{
+    width: 44px;
   }
 
+  #forecast #threeday{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: auto;
+ 
+  }
 
