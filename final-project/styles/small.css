@@ -119,20 +119,26 @@ nav ul.open{
 /*Weather card*/
 #weather{
     background-image: url("../images/temp.webp");
+    color: black;
 }
 #day-temp{
-    border: 1px solid black;
+    background-color: #ffffff63;
+
+    border-radius: 15px;
     text-align: center;
     justify-self: center;
 }
 
 #forecast {
-    
-    border: 1px solid black;
+    background-color: #ffffff52;
+    border-radius: 15px;
     
   }
   #threeday img{
     width: 44px;
+  }
+  h2{
+    text-align: center;
   }
 
   #forecast #threeday{

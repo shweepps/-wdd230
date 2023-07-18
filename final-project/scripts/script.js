@@ -87,8 +87,8 @@ async function apiDay() {
                     <p class="day"><strong>${dayText}</strong></p>
                     <p class="con"> ${condition}</p>
                     <img class="icon-temp" src="https://openweathermap.org/img/w/${iconSr}.png" alt="Weather Icon"> </p>
-                    <p>Low: ${tempMin.toFixed(0)} &deg;F</p>
-                    <p>High: ${tempMax.toFixed(0)} &deg;F</p>
+                    <p>Low ${tempMin.toFixed(0)} &deg;F</p>
+                    <p>High ${tempMax.toFixed(0)} &deg;F</p>
                 `;
 
                 forecastDiv.appendChild(forecastItem);
