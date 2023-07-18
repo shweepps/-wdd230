@@ -87,7 +87,7 @@ async function apiDay() {
 
                 forecastItem.innerHTML = `
                     <p class="day"><strong>${dayText}</strong></p>
-                    <p class="con"> ${condition}</p>
+                    <p class="con"> ${""}</p>
                     <img class="icon-temp" src="https://openweathermap.org/img/w/${iconSr}.png" alt="Weather Icon"> </p>
                     <p>Low ${tempMin.toFixed(0)} &deg;F</p>
                     <p>High ${tempMax.toFixed(0)} &deg;F</p>
