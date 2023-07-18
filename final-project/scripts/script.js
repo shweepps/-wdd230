@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 imgUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
                 currentT.innerHTML = `${data.main.temp} &deg;F`;
                 iconT.setAttribute('src', imgUrl)
-                condition.innerHTML = `${data.weather[0].descr}`;
+                condition.innerHTML = `${data.weather[0].description}`;
             }else{
                 throw new Error(await res.text());
             }
