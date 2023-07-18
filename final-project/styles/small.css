@@ -123,16 +123,25 @@ nav ul.open{
 }
 #day-temp{
     background-color: #ffffff63;
-
+    padding: 10px;
     border-radius: 15px;
     text-align: center;
     justify-self: center;
 }
 
-#forecast {
+#forecast #threeday{
+  
     background-color: #ffffff52;
     border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
     
+  }
+  div#threeday{
+    margin: 0;
+    padding: 0;
+   
+   
   }
   #threeday img{
     width: 44px;
@@ -141,14 +150,34 @@ nav ul.open{
     height: 50px;
     width: 50px;
   }
-  h2{
+  h2,h3{
     text-align: center;
   }
 
   #forecast #threeday{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: auto;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows: 1fr;
+    gap: 0;
+   
  
   }
-
+  #forecast .day{
+    
+    margin-left: 10;
+  }
+  #forecast .icon-temp{
+    
+    margin-left: 20px;
+    width: 55px;
+  }
+  #forecast .min-temp{
+    
+    margin-right: 10px;
+    width: 50px;
+  }
+  #forecast .max-temp{
+    
+    
+    width: 55px;
+  }

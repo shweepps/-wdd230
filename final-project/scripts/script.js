@@ -43,7 +43,7 @@ async function apiDay() {
             const dataDay = await respond.json();
             console.log(dataDay);
             const forecastDiv = document.getElementById("forecast");
-            forecastDiv.innerHTML = "<h2>3-Day Forecast</h2>";
+            forecastDiv.innerHTML = "<h3>3-Day Forecast</h3>";
 
             // Group the forecast data by day
             const forecastList = dataDay.list;
@@ -76,8 +76,6 @@ async function apiDay() {
             forecastDates.forEach((day) => {
                 const tempMin = Math.min(...forecastByDay[day].temps);
                 const tempMax = Math.max(...forecastByDay[day].temps);
-                const condition = forecastByDay[day].conditions[0];
-                const humidity = forecastByDay[day].humidity.reduce((sum, h) => sum + h, 0) / forecastByDay[day].humidity.length;
                 const iconSrc = forecastByDay[day].icons[0] + "@4x"; // Add @4x to the icon URL
                 const iconSr = forecastByDay[day].icons[0];
 
@@ -87,10 +85,9 @@ async function apiDay() {
 
                 forecastItem.innerHTML = `
                     <p class="day"><strong>${dayText}</strong></p>
-                    <p class="con"> ${""}</p>
                     <img class="icon-temp" src="https://openweathermap.org/img/w/${iconSr}.png" alt="Weather Icon"> </p>
-                    <p>Low ${tempMin.toFixed(0)} &deg;F</p>
-                    <p>High ${tempMax.toFixed(0)} &deg;F</p>
+                    <p class="min-temp"> Low<br/> ${tempMin.toFixed(0)} &deg;F</p>
+                    <p class="max-temp">High<br/> ${tempMax.toFixed(0)} &deg;F</p>
                 `;
 
                 forecastDiv.appendChild(forecastItem);
