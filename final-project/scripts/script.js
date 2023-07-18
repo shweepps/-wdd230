@@ -225,6 +225,7 @@ function handleSubmit(event) {
         <p><strong>Total Sugar:</strong> ${totalNutrition.totalSugar.toFixed(1)} g</p>
         <p><strong>Total Calories:</strong> ${totalNutrition.totalCalories.toFixed(1)} kcal</p>
     `;
+    
 }
 
 // Add event listener for form submission

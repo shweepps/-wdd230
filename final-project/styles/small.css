@@ -209,5 +209,20 @@ nav ul.open{
 
 #displaySection{
     text-align: center;
-    jus
+    
+}
+#specialtyDrinkForm{
+    display: grid;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    background-color: #d4878bcc 
+}
+.build{
+    background-color: #d4878bcc ;
+    background-image: url("../images/berries.jpg");
+    background-blend-mode: multiply;
+    color: #ffffff;
+    text-align: center;
 }
