@@ -20,9 +20,13 @@ document.addEventListener('DOMContentLoaded', function(){
             const res = await fetch(url);
             if(res.ok){
                 const data = await res.json();
-                console.log(data);
                 const currentT = document.querySelector("#current");
+                const iconT = document.querySelector("#icon");
+
+                console.log(data);
+                imgUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
                 currentT.innerHTML = `${data.main.temp} &deg;F`;
+                iconT.setAttribute('src', imgUrl)
             }else{
                 throw new Error(await res.text());
             }
@@ -50,15 +54,18 @@ document.addEventListener('DOMContentLoaded', function(){
                         forecastByDay[day] = {
                             temps: [],
                             conditions: [],
-                            humidity: []
+                            humidity: [],
+                            icons: []
                         };
                     }
                     forecastByDay[day].temps.push(item.main.temp);
                     forecastByDay[day].conditions.push(item.weather[0].description);
                     forecastByDay[day].humidity.push(item.main.humidity);
+                    forecastByDay[day].icons.push(item.weather[0].icon);
                 });
     
                 // Get the next 3 days of forecast
+                
                 const forecastDates = Object.keys(forecastByDay).slice(0, 3);
     
                 // Get the current day of the week
@@ -71,16 +78,23 @@ document.addEventListener('DOMContentLoaded', function(){
                     const tempMax = Math.max(...forecastByDay[day].temps);
                     const condition = forecastByDay[day].conditions[0];
                     const humidity = forecastByDay[day].humidity.reduce((sum, h) => sum + h, 0) / forecastByDay[day].humidity.length;
-    
+                    const iconSrc = forecastByDay[day].icons[0] + "@4x"; // Add @4x to the icon URL
+                    const iconSr = forecastByDay[day].icons[0] ;
+                    
+
                     const forecastItem = document.createElement("div");
+                    forecastItem.setAttribute("id","threeday");
                     const dayText = day === currentDay ? "Today" : day;
+                    //<img src="https://openweathermap.org/img/wn/${iconSrc}.png" alt="Weather Icon">
                     forecastItem.innerHTML = `
-                        <p>${dayText}</p>
-                        <p>Condition: ${condition}</p>
-                        <p>Min Temperature: ${tempMin} &deg;F</p>
-                        <p>Max Temperature: ${tempMax} &deg;F</p>
-                        <p>Average Humidity: ${humidity.toFixed(2)}%</p><br/>
-                    `;
+                        <p class="day"><strong>${dayText}</strong>
+                        <img class="icon-temp" src="https://openweathermap.org/img/w/${iconSr}.png" alt="Weather Icon"> </p>
+                        <p class="con">Condition: ${condition}</p>
+                        <p >Min Temperature: ${tempMin.toFixed(0)} &deg;F</p>
+                        <p class=""min-temp">Max Temperature: ${tempMax.toFixed(0)} &deg;F</p>
+                        <p class="humid">Average Humidity: ${humidity.toFixed(0)}%</p><br/>
+                        
+                    `
     
                     forecastDiv.appendChild(forecastItem);
                 });

@@ -115,8 +115,22 @@ nav ul.open{
     background-blend-mode: multiply;
     color: white;
 }
+
+/*Weather card*/
 #weather{
     background-image: url("../images/temp.webp");
 }
+#day-temp{
+    border: 1px solid black;
+    text-align: center;
+    justify-self: center;
+}
+
+#forecast {
+    display: grid;
+    
+    border: 1px solid black;
+    place-items: center;
+  }
 
 
