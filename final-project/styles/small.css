@@ -137,6 +137,10 @@ nav ul.open{
   #threeday img{
     width: 44px;
   }
+  #icon{
+    height: 50px;
+    width: 50px;
+  }
   h2{
     text-align: center;
   }

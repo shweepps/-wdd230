@@ -22,11 +22,13 @@ document.addEventListener('DOMContentLoaded', function(){
                 const data = await res.json();
                 const currentT = document.querySelector("#current");
                 const iconT = document.querySelector("#icon");
+                const condition = document.querySelector("#aircon");
 
                 console.log(data);
                 imgUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
                 currentT.innerHTML = `${data.main.temp} &deg;F`;
                 iconT.setAttribute('src', imgUrl)
+                condition.innerHTML = `${data.weather[0].descr}`;
             }else{
                 throw new Error(await res.text());
             }
