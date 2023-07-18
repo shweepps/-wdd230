@@ -106,7 +106,9 @@ nav ul.open{
     width: 120px;
 }
 #intro{
-    border: 5px double blue;
+    border: none;
+    margin: 1px auto 1px;
+    width: 94%;
     border-radius: 1px;
     background-image: url("../images/grape.jpg");
     background-repeat: no-repeat;
@@ -114,6 +116,7 @@ nav ul.open{
     background-color: #f07478;
     background-blend-mode: multiply;
     color: white;
+    text-align: center;
 }
 
 /*Weather card*/
@@ -181,3 +184,30 @@ nav ul.open{
     
     width: 55px;
   }
+  /*Information section*/
+  #info-section{
+    background-image: url("../images/infoo.webp");
+    background-size: cover;
+    background-color:#f07478;
+    background-blend-mode: difference;
+    color: #ffffff;
+    border: none;
+
+}
+/*Call to action section*/
+#call-act,#showcase{
+    background-image: url("../images/infoo.webp");
+    background-size: cover;
+    background-color:#f07478;
+    background-blend-mode: difference;
+    color: #ffffff;
+    border: none;
+
+
+}
+/*Fresh page*/
+
+#displaySection{
+    text-align: center;
+    jus
+}

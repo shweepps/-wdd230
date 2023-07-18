@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/script.js"></script>
+    
+    
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -37,9 +40,34 @@
          </nav>
     </header>
     <main>
-       
+        <h1>Build Your Own Specialty Drink</h1>
+        <form id="specialtyDrinkForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+    
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" required><br><br>
+    
+            <label for="fruit1">Fruit 1:</label>
+            <select id="fruit1" required></select><br><br>
+    
+            <label for="fruit2">Fruit 2:</label>
+            <select id="fruit2" required></select><br><br>
+    
+            <label for="fruit3">Fruit 3:</label>
+            <select id="fruit3" required></select><br><br>
+    
+            <label for="specialInstructions">Special Instructions:</label><br>
+            <textarea id="specialInstructions" rows="4" cols="30"></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+        <div id="displaySection"></div> 
     </main>
-    <script src="scripts/script.js"></script>
+   
     <footer>
         <p>Experience the abundance of fresh and healthy options at Bountiful Foods. Start your journey today!</p>
     </footer>
