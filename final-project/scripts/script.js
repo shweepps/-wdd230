@@ -1,14 +1,9 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
     function toggleMenu() {
         document.getElementById("primaryNav").classList.toggle("open");
         document.getElementById("hamBtn").classList.toggle("open");
     }
-
-    
 
     const btn = document.getElementById("hamBtn");
     btn.onclick = toggleMenu;
@@ -215,7 +210,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const homePageData = {
             firstName: formData.firstName,
             email: email,
-            selectedFruit1: selectedFruit1
+            selectedFruit1: selectedFruit1,
+            selectedFruit2: selectedFruit2,
+            selectedFruit3: selectedFruit3
         };
         localStorage.setItem('homePageData', JSON.stringify(homePageData));
         
@@ -245,16 +242,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add event listener for form submission
     form.addEventListener("submit", handleSubmit);
     
-
-    /* Update home page */
-
-   // Function to update Specialty Drinks Submission Data on the Home page or Fresh page
-//function updateHomePageData() {
- 
-//}
-
-// Call the function to update the data on the Home page
-//updateHomePageData();
 
 
     function updateSubmissionTracker() {
@@ -296,8 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
     });
-
-   
+    
 });
 const homePageData = JSON.parse(localStorage.getItem('homePageData'));
 const submissionDataDiv = document.getElementById("homeData");
@@ -307,7 +293,13 @@ if (homePageData) {
         <p><strong>First Name:</strong> ${homePageData.firstName}</p>
         <p><strong>Email:</strong> ${homePageData.email}</p>
         <p><strong>Fruit 1:</strong> ${homePageData.selectedFruit1}</p>
+        <p><strong>Fruit 2:</strong> ${homePageData.selectedFruit2}</p>
+        <p><strong>Fruit 3:</strong> ${homePageData.selectedFruit3}</p>
     `;
 } else {
     submissionDataDiv.innerHTML = "<p>No submissions yet.</p>";
 }
+
+
+
+
