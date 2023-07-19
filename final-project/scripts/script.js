@@ -195,7 +195,8 @@ document.addEventListener('DOMContentLoaded', function () {
             selectedFruit1: selectedFruit1,
             selectedFruit2: selectedFruit2,
             selectedFruit3: selectedFruit3,
-            specialInstructions: specialInstructions
+            specialInstructions: specialInstructions,
+            orderDate: new Date().toLocaleString()
         };
         
 
@@ -229,14 +230,17 @@ document.addEventListener('DOMContentLoaded', function () {
             <p><strong>Fruit 1:</strong> ${formData.selectedFruit1}</p>
             <p><strong>Fruit 2:</strong> ${formData.selectedFruit2}</p>
             <p><strong>Fruit 3:</strong> ${formData.selectedFruit3}</p>
+            
             <p><strong>Special Instructions:</strong> ${formData.specialInstructions}</p>
             <h2>Total Nutritional Values:</h2>
             <p><strong>Total Carbohydrates:</strong> ${totalNutrition.totalCarbohydrates.toFixed(1)} g</p>
             <p><strong>Total Protein:</strong> ${totalNutrition.totalProtein.toFixed(1)} g</p>
             <p><strong>Total Fat:</strong> ${totalNutrition.totalFat.toFixed(1)} g</p>
             <p><strong>Total Sugar:</strong> ${totalNutrition.totalSugar.toFixed(1)} g</p>
+            
             <p><strong>Total Calories:</strong> ${totalNutrition.totalCalories.toFixed(1)} kcal</p>
-        `;
+            
+            `;
     }
 
     // Add event listener for form submission
@@ -290,11 +294,10 @@ const submissionDataDiv = document.getElementById("homeData");
 
 if (homePageData) {
     submissionDataDiv.innerHTML = `
-        <p><strong>First Name:</strong> ${homePageData.firstName}</p>
-        <p><strong>Email:</strong> ${homePageData.email}</p>
-        <p><strong>Fruit 1:</strong> ${homePageData.selectedFruit1}</p>
-        <p><strong>Fruit 2:</strong> ${homePageData.selectedFruit2}</p>
-        <p><strong>Fruit 3:</strong> ${homePageData.selectedFruit3}</p>
+       
+        <p class="drinks"><strong>Fruit 1:</strong> ${homePageData.selectedFruit1}</p>
+        <p class="drinks"><strong>Fruit 2:</strong> ${homePageData.selectedFruit2}</p>
+        <p class="drinks"><strong>Fruit 3:</strong> ${homePageData.selectedFruit3}</p>
     `;
 } else {
     submissionDataDiv.innerHTML = "<p>No submissions yet.</p>";

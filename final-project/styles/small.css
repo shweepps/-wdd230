@@ -226,3 +226,28 @@ nav ul.open{
     color: #ffffff;
     text-align: center;
 }
+
+.drinks{
+    text-align: center;
+}
+#submissionData{
+
+   padding: 15px;
+}
+button a{
+   
+    text-decoration: none;
+   
+}
+.btnCall{
+    background-color: #f07478;
+    margin-left:35%;
+    margin-top: 10px;
+    padding: 10px;
+}
+#btnOrder{
+    background-color: #f07478;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
