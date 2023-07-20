@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const btn = document.getElementById("hamBtn");
     btn.onclick = toggleMenu;
 
+    const footerEl = document.querySelector("footer");
+    footerEl.innerHTML = `
+        <p>Experience the abundance of fresh and healthy options at Bountiful Foods.
+         Start your journey today!
+        </p>
+       <p>Location: <a href="https://www.google.com/maps/place/Carlsbad,+CA,+USA/@33.1954704,-117.3956641,10.51z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">Map</a></p>
+       <p>Address:  123 Main Street, Carlsbad, CA 12345 </p>
+       `;
+
+
     /* Weather API */
     const cityName = "Carlsbad";
     const units = 'imperial';

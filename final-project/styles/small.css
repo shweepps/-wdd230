@@ -251,3 +251,12 @@ button a{
     padding: 10px;
     border-radius: 15px;
 }
+/**footer*/
+
+footer{
+    display: grid;
+    background-color: #f07478;
+    border:1px solid #f07478;
+    height: 200px;
+    padding: 10px;
+}
