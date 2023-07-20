@@ -12,7 +12,7 @@ h1, h2,h3{
 body{
     
     width: 350px;
-    border: 2px solid blue; 
+    background-color: #26374D;
    }
 header{
     background-color: #f07478;
@@ -29,7 +29,7 @@ header{
 
 article, section{
     width: 300px;
-    border: 1px solid black;
+    
     border-radius: 10px;
     margin: 10px;
     padding: 10px;    
@@ -60,8 +60,8 @@ nav ul li a{
 nav ul li a:hover{
     text-decoration: none ;
     color: blue;
-    background-color: yellow;
-    height: 30px;
+    background-color: rgb(141, 141, 112);
+     height: 30px;
 }
 
 /*ham button toggle*/
@@ -200,7 +200,7 @@ nav ul.open{
 }
 /*Call to action section*/
 #call-act,#showcase{
-    background-image: url("../images/infoo.webp");
+    background-image: url("../images/black.jpg");
     background-size: cover;
     background-color:#f07478;
     background-blend-mode: difference;
@@ -272,6 +272,6 @@ footer{
     display: grid;
     background-color: #f07478;
     border:1px solid #f07478;
-    height: 200px;
+    
     padding: 10px;
 }

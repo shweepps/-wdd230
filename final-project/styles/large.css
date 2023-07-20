@@ -10,12 +10,26 @@
         
     }
     body{
-        width: 810px;
-        min-width: 550px;
+        width: 90%;
+        
+    }
+    p,label,input{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    p{text-align: center;}
+    select{
+        width: 150px;
+        height: 50px;
+        font-size: 1em;
+    }
+    h1, h2,h3,nav{
+        font-family: 'Lobster', cursive; 
+        font-size: 1.6em;
     }
     article, section{
-        width: 750px;
-        border: 1px solid black;
+        width: 95%;
+       
         border-radius: 10px;
         margin: 10px;
         padding: 10px;    
@@ -23,11 +37,58 @@
     #logo{
         width: 85px;
     }
+    #socials{
+        margin-left: 550px;
+    }
     #hamBtn{
      
         font-size: 4rem;
-        
+        display: none;
     }
+    nav ul{
+        display: flex;
+        
+        text-align: center;
+    }
+    nav ul li a:hover{
+        
+        background-color: rgb(141, 141, 112);
+        height: 60px;
+    }
+    nav ul li{
+        display: flex;
+        font-size: 3rem;
+        text-align: center;
+        margin: 10px auto 10px;
+    }
+    #weather{
+        width: 50%;
+        min-width: 35%;
+       
+    }
+    #serve{
+        margin-left: 45px;
+        float: right;
+        width: 45%;
+        min-width: 22%;
 
+    }
+    #call-act{}
+    #info-section{}
+
+    footer{
+        display: grid;
+        background-color: #f07478;
+        border:1px solid #f07478;
+        
+        padding: 10px;
+    }
+    #frame{
+        justify-self: center;
+        border: 3px solid rgb(134, 134, 172);
+        margin: 50px ;
+        height: 500px;
+        width: 90%;
+        }
 
 }
