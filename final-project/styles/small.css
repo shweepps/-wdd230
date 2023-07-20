@@ -234,16 +234,22 @@ nav ul.open{
 
    padding: 15px;
 }
-button a{
-   
-    text-decoration: none;
-   
-}
+
+.btnCall:hover {
+    background-color: #0056b3;
+  }
 .btnCall{
     background-color: #f07478;
-    margin-left:35%;
-    margin-top: 10px;
-    padding: 10px;
+    display: inline-block;
+    margin: 10px 0px 10px 100px;
+    padding: 10px ;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
 }
 #btnOrder{
     background-color: #f07478;

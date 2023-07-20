@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const iconT = document.querySelector("#icon");
                 const condition = document.querySelector("#aircon");
 
-                console.log(data);
+                //console.log(data);
                 imgUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
                 currentT.innerHTML = `${data.main.temp} &deg;F`;
                 iconT.setAttribute('src', imgUrl)
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const respond = await fetch(urlDay);
             if (respond.ok) {
                 const dataDay = await respond.json();
-                console.log(dataDay);
+               // console.log(dataDay);
                 const forecastDiv = document.getElementById("forecast");
                 forecastDiv.innerHTML = "<h3>3-Day Forecast</h3>";
 
