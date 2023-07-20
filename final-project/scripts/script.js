@@ -291,17 +291,18 @@ document.addEventListener('DOMContentLoaded', function () {
     updateSubmissionTracker();
     
 
-    // Event listener to watch for changes in localStorage
-    window.addEventListener('storage', function (event) {
-        // Check if the data in the formData key has changed
-        if (event.key === 'formData') {
-            updateSubmissionTracker();
-            
-
-        }
-    });
-    
+  
 });
+  // Event listener to watch for changes in localStorage
+  window.addEventListener('storage', function (event) {
+    // Check if the data in the formData key has changed
+    if (event.key === 'formData') {
+        updateSubmissionTracker();
+        
+
+    }
+});
+
 const homePageData = JSON.parse(localStorage.getItem('homePageData'));
 const submissionDataDiv = document.getElementById("homeData");
 
