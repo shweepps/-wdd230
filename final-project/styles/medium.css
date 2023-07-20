@@ -1,0 +1,42 @@
+@media only screen and (min-width: 510px) {
+
+    *{
+        margin: 1px auto 1px;
+      
+    }
+    body{
+    
+        width: 550px;
+    }
+    
+    article, section{
+        width: 500px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;    
+    }
+    #logo, img{
+        width: 65px;
+    }
+    #hamBtn{
+     
+        font-size: 4rem;
+        
+    }
+    .fruitpic{
+        display: grid;
+        
+        width: 200px;
+        height: 200px;
+     }
+     #pic3{
+        width: 200px;
+        height: 200px;
+     }
+     .btnCall{
+        font-size: 16px;
+        margin: 10px 0px 10px 200px;
+       
+    }
+}

@@ -137,12 +137,17 @@ document.addEventListener('DOMContentLoaded', function () {
     async function populateSelectElement(selectElement) {
         await fetchFruitData();
         if (nutritionalData) {
-            nutritionalData.forEach(fruit => {
-                const option = document.createElement("option");
-                option.value = fruit.name;
-                option.textContent = fruit.name;
-                selectElement.appendChild(option);
+            const optionPromises = nutritionalData.map(fruit => {
+                return new Promise((resolve) => {
+                    const option = document.createElement("option");
+                    option.value = fruit.name;
+                    option.textContent = fruit.name;
+                    resolve(option);
+                });
             });
+
+            const options = await Promise.all(optionPromises);
+            options.forEach(option => selectElement.appendChild(option));
         }
     }
     
