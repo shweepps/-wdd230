@@ -25,7 +25,7 @@
         
     }
     .fruitpic{
-        display: grid;
+        display: flex;
         
         width: 200px;
         height: 200px;
@@ -36,7 +36,7 @@
      }
      .btnCall{
         font-size: 16px;
-        margin: 10px 0px 10px 200px;
+        margin: 10px 0px 10px 340px;
        
     }
     #frame{

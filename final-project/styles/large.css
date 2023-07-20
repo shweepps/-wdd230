@@ -1,0 +1,33 @@
+@media only screen and (min-width: 810px) {
+
+    *{
+        margin: 1px auto 1px;
+      
+    }
+    #headNav{
+        display: flex;
+        gap: 5px;
+        
+    }
+    body{
+        width: 810px;
+        min-width: 550px;
+    }
+    article, section{
+        width: 750px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;    
+    }
+    #logo{
+        width: 85px;
+    }
+    #hamBtn{
+     
+        font-size: 4rem;
+        
+    }
+
+
+}
